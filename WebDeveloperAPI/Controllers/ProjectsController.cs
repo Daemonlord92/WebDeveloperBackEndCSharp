@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 using WebDeveloperAPI.Data;
 using WebDeveloperDataLayer.Model;
 
-namespace WebDeveloperAPI
+namespace WebDeveloperAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
