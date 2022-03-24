@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -45,6 +46,7 @@ namespace WebDeveloperAPI.Controllers
 
         // PUT: api/BugTrackers/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        [Authorize]
         [HttpPut("{id}")]
         public async Task<IActionResult> PutBugTracker(int id, BugTracker bugTracker)
         {
@@ -76,6 +78,7 @@ namespace WebDeveloperAPI.Controllers
 
         // POST: api/BugTrackers
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        [Authorize]
         [HttpPost]
         public async Task<ActionResult<BugTracker>> PostBugTracker(BugTracker bugTracker)
         {
@@ -86,6 +89,7 @@ namespace WebDeveloperAPI.Controllers
         }
 
         // DELETE: api/BugTrackers/5
+        [Authorize]
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteBugTracker(int id)
         {
