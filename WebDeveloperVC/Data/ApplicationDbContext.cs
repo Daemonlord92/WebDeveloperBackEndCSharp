@@ -11,5 +11,6 @@ namespace WebDeveloperVC.Data
         {
         }
         public DbSet<WebDeveloperDataLayer.Model.BugTracker> BugTracker { get; set; }
+        public DbSet<WebDeveloperDataLayer.Model.Project> Project { get; set; }
     }
 }
