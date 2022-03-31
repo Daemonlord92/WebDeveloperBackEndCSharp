@@ -1,14 +1,24 @@
-﻿@model IEnumerable<WebDeveloperDataLayer.Model.Project>
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+@model IEnumerable<WebDeveloperDataLayer.Model.Project>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Project";
 }
 
 <h1>Index</h1>
-
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+@if (SignInManager.IsSignedIn(User))
+{
+    <p>
+        <a asp-action="Create">Create New</a>
+    </p>
+}
+else
+{
+    <br/>
+}
 <table class="table">
     <thead>
         <tr>
