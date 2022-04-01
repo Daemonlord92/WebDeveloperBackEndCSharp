@@ -5,7 +5,7 @@ VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebDeveloperDataLayer", "WebDeveloperDataLayer\WebDeveloperDataLayer.csproj", "{52D3A3AB-7425-4867-8B63-C1E61EDDA751}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebDeveloperVC", "WebDeveloperVC\WebDeveloperVC.csproj", "{D2F960A9-399F-4963-98C9-98968D8D5895}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebDeveloperVC", "WebDeveloperVC\WebDeveloperVC.csproj", "{D2F960A9-399F-4963-98C9-98968D8D5895}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
