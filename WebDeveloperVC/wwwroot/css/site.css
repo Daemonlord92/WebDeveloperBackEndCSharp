@@ -1,6 +1,5 @@
 html {
   font-size: 14px;
-  color: whitesmoke !important;
 }
 
 @media (min-width: 768px) {
@@ -15,6 +14,7 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
-  background: url("../img/shutterstock_1493123198.jpg") no-repeat center;
+    margin-bottom: 60px;
+    background: url("../img/shutterstock_1493123198.jpg") no-repeat center;
+    color: #fff;
 }
